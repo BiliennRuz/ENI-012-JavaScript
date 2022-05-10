@@ -21,3 +21,26 @@ console.log(paragrapheContenu);
 // 5 - selection complexe multiple
 let elements = document.querySelectorAll("article, p");
 console.log(elements);
+
+//////////////////////////
+// modifier le DOM
+//////////////////////////
+
+// modifier le contenu d'un paragraphe
+let p = document.getElementById("monParagraphe");
+// 1 - textContent : permet d'insérer du text dans un élément
+// 2 - innerHTML : permet d'insérer du HTML dans un élément
+//p.textContent = "Message généré par JavaScript";
+p.innerHTML = "Message généré par <strong>JavaScript</strong>";
+
+// modifier la classe d'un élément
+p.classList.add("rouge");
+
+// modifier le style
+p.style.color = "red";
+
+// fabriquer des nouveaux éléments du DOM
+let maDiv = document.getElementById("maDiv"); // je recupère ma div
+let input = document.createElement("input"); // je fabrique un input
+input.setAttribute("type", "pasword"); // je le met en type password
+maDiv.appendChild(input); // je n'oublie pas d'ajouter mon élément à ma div
