@@ -70,7 +70,7 @@ newP.style.color = "blue";
 
 //autre solution pour mettre en gras :
 //let monde = document.getElementById("monde");
-//monde.style.fontWeigth = "bold";
+monde.style.fontWeigth = "bold";
 
 
 

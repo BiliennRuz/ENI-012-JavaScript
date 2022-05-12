@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="text" oninput="pasteInputText(this)"/>
+    <p id="p1"></p>
+
+    <form action="" method="">
+        <label for="password">Mot de passe :</label> <!-- le for du lab est lié à l'id de l'input -->
+        <input id="password" type="password" name="password" oninput="checkPassword()"/>
+        <img onmousedown="show(this, 'password')" onmouseup="hide(this, 'password')" width="10px" height="10px" src="eye-closed.jpg" alt="eye" title="eye"/>
+        <span id="message"></span><br/>
+        <label for="confirmPassword">Confirmation mot de passe :</label>
+        <input id="confirmPassword" type="password" name="confirmPassword" oninput="checkPassword()"/> <!-- name est utilisé comme nom de paramètre pour l'envoi au serveur -->
+        <img onmousedown="show(this, 'confirmPassword')" onmouseup="hide(this, 'confirmPassword')" width="10px" height="10px" src="eye-closed.jpg" alt="eye" title="eye"/>
+        <br/>
+        <input id="inputInscrire" type="submit" value="s'inscrire" disabled/>
+    </form>
+
+    <script src="exercice.js"></script>
+</body>
+</html>
