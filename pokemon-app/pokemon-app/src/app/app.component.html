@@ -1,0 +1,22 @@
+<h1 class="center-align">pokedex</h1>
+
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let pokemon of pokemons" class="col s6 m3">
+      <div class="card">
+        <div class="card-image">
+          <img src="{{ pokemon.image }}">
+          
+        </div>
+        <div class="card-content">
+          <p class="center">{{ pokemon.nom}}</p>
+        </div>
+        <div *ngFor="let types of pokemon.types" class="{{ type | pokemonTypeColor }}">
+          <a href="#">{{ types }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
